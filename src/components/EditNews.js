@@ -39,7 +39,7 @@ const EditNews = () => {
 				author: values.author,
 				content: values.content
 			};
-			await axios.patch(`http://localhost:3001/news/${params.id}`, { news });
+			await axios.patch(`https://zepskillgraynewswireapi.onrender.com/news/${params.id}`, { news });
 			toast.success('successfully updated the news', {
 				position: 'top-right',
 				autoClose: 5000,

@@ -23,7 +23,7 @@ const ShowNews = () => {
 	);
 
 	const deleteNewsFromDb = async () => {
-		await axios.delete(`http://localhost:3001/news/${params.id}`);
+		await axios.delete(`https://zepskillgraynewswireapi.onrender.com/news/${params.id}`);
 		toast.success('successfully deleted the news', {
 			position: 'top-right',
 			autoClose: 5000,

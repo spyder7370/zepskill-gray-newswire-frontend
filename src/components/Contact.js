@@ -8,7 +8,7 @@ import { sendToast } from '../utils/sendToast';
 const Contact = () => {
 	const sendEmail = async (values) => {
 		try {
-			await axios.post('http://localhost:3001/contact', values);
+			await axios.post('https://zepskillgraynewswireapi.onrender.com/contact', values);
 			sendToast('success', 'successfully sent email');
 		} catch (error) {
 			sendToast('error', 'email could not be sent');

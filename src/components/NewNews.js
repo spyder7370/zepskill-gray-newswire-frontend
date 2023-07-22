@@ -16,7 +16,7 @@ const NewNews = () => {
 				author: values.author,
 				content: values.content
 			};
-			await axios.post('http://localhost:3001/news', { news });
+			await axios.post('https://zepskillgraynewswireapi.onrender.com/news', { news });
 			toast.success('successfully posted the news', {
 				position: 'top-right',
 				autoClose: 5000,
